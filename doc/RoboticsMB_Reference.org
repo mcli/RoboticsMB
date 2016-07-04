@@ -51,7 +51,8 @@
     purchase a set, the "Compact Tracked Loader" (Lego set 42032)
     has useful parts and is used as an example in some of the
     documentation from EdWare. (Useful, but not required)
-
+  - You may want to purchase and read the [[http://www.scoutstuff.org/robotics-merit-badge-pamphlet.html#.V3oLh3rivRZ][Robotics Merit Badge pamphlet]] or the [[http://www.scoutstuff.org/interactive-digital-robotics-merit-badge-pamphlet.html#.V3oL2XrivRY][Interactive Digital version]] of
+    the pamphlet
 * References
   - [[https://meetedison.com/content/EdBooks/EdBook1-Your-EdVenture-into-Robotics-You-re-a-Controller.pdf][EdBook 1 - You're a Controller]]
   - [[https://meetedison.com/content/EdBooks/EdBook2-Your-EdVenture-into-Robotics-You-re-a-Programmer.pdf][EdBook 2 - You're a Programmer]]
