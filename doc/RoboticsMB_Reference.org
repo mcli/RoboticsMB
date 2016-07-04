@@ -1,157 +1,59 @@
 #+TITLE: Robotics Merit Badge Class Reference
 #+AUTHOR: Maurice Ling
-#+DATE: 2015-07-07
+#+DATE: 2016-07-03
 
 * Introduction
   This document contains useful information for the 
-  Troop 675 Irvine Robotics Merit Badge class.
+  2016 Troop 675 Irvine Robotics Merit Badge class.
 
-  Copyright © 2015 Maurice Ling
+  Copyright © 2016 Maurice Ling
 
 * Items to bring for each Session
-   - Laptop/computer with Android IDE installed. (see Section: [[Computer Requirements]])
-   - Laptop power adapter/cable.
+   - Laptop/computer/tablet with EdWare access. (see Section: [[Computer Requirements]])
+   - Power adapter/cable.
    - Pen/pencil for taking notes
-   - Robotics Notebook, Workbook and Kit (distributed in first class)
+   - Robotics Notebook and Ediston Robot Kit (distributed in first class)
+   - Charged AAA batteries (bring 4 alkaline AAA batteries for first class)
+   - [[http://www.apu.edu/library/educationalprograms/stemnova/downloads/prerequisites/Robotics.pdf][Workbook]] (Print out for first class)
    - Blue Card signed by Scoutmaster
-   - USB -A to mini-B USB cable.  These are commonly used to connect
-     cameras or other devices to computers.  You should be able to
-     find these lying around in a drawer somewhere.  There are
-     different types of mini-B cables.  The kind you need looks like:
-   #+CAPTION: USB-A to Mini-B Cable
-   [[./images/USB-AToMini-BCable.jpg]]
+   - EdCom programming cable (included with Edison Robot)
 
 * Computer Requirements
 
-  You need a computer (Mac, Windows PC, or Linux) that can run the
-  Arduino IDE (Interactive Development Environment).  The computer must
-  have an available USB port.  Sorry, no tablets or smart phones.
-  
-  If you have extra time and an Android phone/tablet, it is possible to
-  [[http://www.instructables.com/id/Program-your-Arduino-with-a-Android-device][program your Arduino with an Android tablet]].  Not recommended for your
-  primary development environment though!  Software Installation
-  
-  These steps may require Administrator privileges and software
-  installation skills.  Get an adult to assist you if you are unsure of
-  what to do.  If you are stuck, make sure you at least download the
-  packages on to your computer for the first class.  
-  
-** Arduino IDE
+  You need a computer or tablet (Mac, Windows PC, or Linux) with audio output
+  capability and standard 1/8" audio jack.  Wifi is highly recommended.
 
-   Download and install the [[http://www.arduino.cc/en/Main/Software][Arduino IDE]]. For this class, I will be using
-   version 1.0.6 of the IDE.  There are newer Beta versions available
-   (1.5 and 1.6) which you are welcome to try (at your own risk!).
+** EdWare Programming software
 
-   Note:  Linux users can install the Arduino IDE via their package manager.
+   The class will be taught using the on-line version of Edware.  The on-line 
+   version allows you to share programs with each other, which is useful
+   if you need help with debugging your program.
 
-*** Arduino Board Configuration
-    Configure your Arduino IDE to work with our board under the *Tools* Menu:
-       - Arduino Pro or Pro Mini
-       - ATmega 328 (3.3V, 8Mhz)
+   EdWare is available [[http://edwareapp.com/?_ga%3D1.185565985.982237356.1463279107#][on-line]] for free via web browser.  Create an account via 
+   *Menu->Login*
 
-*** Serial Port Configuration
-    Select the Serial port to use for connecting the Arduino Board.  On Windows
-    this is usually the COM3 port.  
-
-    On the Mac, a properly installed driver will show /dev/cu.SLAB_USBtoUART in the 
-    *Tools->port* menu
-
-    If the port does not show up in the menu, follow the USB Driver installation 
-    section below for your computer.
-** USB Driver
-
-   To allow your computer to communicate to the Arduino board, install
-   the USB Driver for your computer. [[http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx][Download the driver package]] for your
-   computer and install it on your computer following the instructions
-   for your particular type of computer.
-   
-*** Mac OSX
-
-    Click on the zip file which you [[http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx][downloaded]] and install the dmg file ([[https://www.google.com/search?q%3Dhow%2Bto%2Binstall%2Bdmg%2Bon%2BMac&ie%3Dutf-8&oe%3Dutf-8][google instructions]]).  
-
-    A properly installed driver will show /dev/cu.SLAB_USBtoUART in the 
-    *Tools->port* menu
-
-*** Windows PC
-
-    Extract the zip file which you [[http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx][downloaded]] and click on the right
-    installer (x86 or x64) for your computer.  To determine if your PC is
-    32-bit (x86) or 64-bit (x64), follow the [[https://support.microsoft.com/en-us/kb/827218][instructions provided by Microsoft]].
-
-** Github Account and Setup
-
-   Github is a source code control tool that will allow you to retrieve
-   my examples in class and for me to look at code that you’ve developed.
-   It will also help you during development by allowing you to check
-   point your code.
-   
-   *Note:* For “git” commands mentioned below, right click on the
-   RoboticsMB project in the github client and select “Open in Git shell”
-   (for Windows). This will launch a terminal in the RoboticsMB directory
-   where you can execute the “git” commands.
-
-   *Note:*  After you synchronize, you may need to restart the Arduino
-   IDE to be able to see any new files.
-   
-   1. Install the github client software on your computer
-   (see Section: [[Github Client Software Installation]].)
-   2. Run the github client and create an account.
-   3. Email your github user ID to me.
-   4. In your browser, go to https://github.com/mcli/RoboticsMB and click
-      “fork” on the upper right hand side.  Creating a fork copies the
-      RoboticsMB project into your own github account that you can work
-      with.
-   5. In the github client, clone your forked project into a directory
-      and make that the sketch location the Preferences sketchbook
-      location field in the Arduino IDE.
-   6. Configure my RoboticsMB to be the upstream project (from your
-      command line prompt, git shell, or terminal). In the RoboticsMB
-      project directory created when you cloned your project, type:
-      #+BEGIN_EXAMPLE
-      git remote add upstream https://github.com/mcli/RoboticsMB.git
-      #+END_EXAMPLE
-
-*** Github Client Software Installation
-**** Windows 7 and higher
-https://windows.github.com/
-
-**** Mac OSX
-
-https://mac.github.com/
-
-*** Synchronizing with the Upstream Github Project
-
-To synchronize with the upstream project if there are any changes,
-perform the following commands in the RoboticsMB project directory:
-
-1. Retrieve any upstream changes
-   #+BEGIN_EXAMPLE
-   git fetch upstream
-   #+END_EXAMPLE
-
-2. Make sure you're on your local master branch
-   #+BEGIN_EXAMPLE
-   git checkout master
-   #+END_EXAMPLE
-
-3. Merge your local master with the upstream changes
-   #+BEGIN_EXAMPLE
-   git merge upstream/master
-   #+END_EXAMPLE
-
-*Note:* After you synchronize, you may need to restart the Arduino IDE to be able to see any new program files.
+   For off-line access, versions for Windows, Mac, Linux, Android, iOS
+   are also freely available at
+   https://meetedison.com/robot-programming-software/.  You may try
+   these out for a back up to the online version, but the online version is preferred 
+   and has more features.  If you want to program without a network connection,
+   install one of these alternatives.
 
 * Other Items You Will Need
+  - Blue Card with the Scoutmaster’s signature.
+  - AAA NiMH battery charger (the kit you will receive will include
+    AAA NiMH batteries).
+  - A small work area at home you can use to work on your robot.
+  - Sony compatible or universal IR remote
+  - Legos.  I will have a limited number of random special connector Lego
+    parts available, but you will be expected to provide the
+    majority of Lego parts for your robot.  If you'd like to
+    purchase a set, the "Compact Tracked Loader" (Lego set 42032)
+    has useful parts and is used as an example in some of the
+    documentation from EdWare. (Useful, but not required)
 
-  Here are additional items you will need:
-
-    - Blue Card with the Scoutmaster’s signature.
-    - Small Phillips head screw driver (not flat head)
-    - AAA NiMH battery charger (the kit you will receive will have 4
-      AAA NiMH batteries).
-    - A small work area at home you can use to work on your robot.
-      NOT on the floor!
-    - Sony or universal IR remote (optional)
-    - Multimeter (optional)
-
+* References
+  - [[https://meetedison.com/content/EdBooks/EdBook1-Your-EdVenture-into-Robotics-You-re-a-Controller.pdf][EdBook 1 - You're a Controller]]
+  - [[https://meetedison.com/content/EdBooks/EdBook2-Your-EdVenture-into-Robotics-You-re-a-Programmer.pdf][EdBook 2 - You're a Programmer]]
+  - [[https://meetedison.com/content/EdBooks/EdBook3-Your-EdVenture-into-Robotics-You-re-a-Builder.pdf][EdBook 3 - You're a Builder]]
 
