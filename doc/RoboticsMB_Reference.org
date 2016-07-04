@@ -29,7 +29,7 @@
    version allows you to share programs with each other, which is useful
    if you need help with debugging your program.
 
-   EdWare is available [[http://edwareapp.com/?_ga%3D1.185565985.982237356.1463279107#][on-line]] for free via web browser.  Create an account via 
+   EdWare is available [[http://edwareapp.com/][on-line]] for free via web browser.  Create an account via 
    *Menu->Login*
 
    For off-line access, versions for Windows, Mac, Linux, Android, iOS
