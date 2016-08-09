@@ -10,8 +10,8 @@
   Edison occasionally.  After pairing your Edison with your remote, the 
   Edison robot will drive in response to your remote even if you aren't 
   running any programs.  
-  *Using this mode to control your robot does not satisfy the* 
-  *Robotics Merit Badge requirements*
+  *Using this pairing remote mode to control your robot does not satisfy the* 
+  *Robotics Merit Badge requirements.*
   
   To prepare for pairing, print pages 20 and 21 of [[https://meetedison.com/content/EdBooks/EdBook2-Your-EdVenture-into-Robotics-You-re-a-Programmer.pdf][EdBook2]] which contain 
   barcodes referred to in this process. Then follow the steps below 
@@ -21,19 +21,20 @@
 
   1. Choose a command code for the button you want to pair.  
      The command codes from #0 to #7 and are associated with different 
-     pairing behaviors as shown in the table below.
-     | Command Code | Pairing Behavior |
-     |--------------+------------------|
-     | #0           | Drive Forward    |
-     | #1           | Drive Backwards  |
-     | #2           | Turn Right       |
-     | #3           | Turn Left        |
-     | #4           | Spin Right       |
-     | #5           | Spin Left        |
-     | #6           | Play Beep        |
-     | #7           | Play Tune        |
-     |              |                  |
-     |--------------+------------------|
+     pairing behaviors as shown in the table below.  I've added a empty column
+     for you to write in your own program's behavior.  Put this table into your
+     Engineering Notebook.
+     | Command Code | Pairing Behavior | Your Program Behavior |
+     |--------------+------------------+-----------------------|
+     | #0           | Drive Forward    |                       |
+     | #1           | Drive Backwards  |                       |
+     | #2           | Turn Right       |                       |
+     | #3           | Turn Left        |                       |
+     | #4           | Spin Right       |                       |
+     | #5           | Spin Left        |                       |
+     | #6           | Play Beep        |                       |
+     | #7           | Play Tune        |                       |
+     |--------------+------------------+-----------------------|
   2. Place Edison facing the barcode on the right side.
   3. Press the record (round) button 3 times.
   4. Edison will drive forward and scan the barcode
