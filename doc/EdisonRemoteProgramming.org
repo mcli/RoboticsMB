@@ -1,0 +1,67 @@
+* Introduction
+  This tutorial explains how to pair a TV/DVD IR remote to your Edison,
+  how to write a program for the Edison to respond to the remote,
+  and gives an example that plays music in response to pressing buttons 
+  on the remote.  
+* Pairing your Edison with your remote
+  /Pairing/ teaches your Edison to respond to different keys on your remote
+  control.  Normally, pairing only needs to be performed once, but it is 
+  possible for the pairing to be cleared, so you may need to re-pair the 
+  Edison occasionally.  After pairing your Edison with your remote, the 
+  Edison robot will drive in response to your remote even if you aren't 
+  running any programs.  
+  *Using this mode to control your robot does not satisfy the* 
+  *Robotics Merit Badge requirements*
+  
+  To prepare for pairing, print pages 20 and 21 of [[https://meetedison.com/content/EdBooks/EdBook2-Your-EdVenture-into-Robotics-You-re-a-Programmer.pdf][EdBook2]] which contain 
+  barcodes referred to in this process. Then follow the steps below 
+  *for each button you want to pair*. The process below is derived from
+  the steps on page 20 of EdBook2.  For best results, start with a fully 
+  charged set of batteries in your Edison.
+
+  1. Choose a command code for the button you want to pair.  
+     The command codes from #0 to #7 and are associated with different 
+     pairing behaviors as shown in the table below.
+     | Command Code | Pairing Behavior |
+     |--------------+------------------|
+     | #0           | Drive Forward    |
+     | #1           | Drive Backwards  |
+     | #2           | Turn Right       |
+     | #3           | Turn Left        |
+     | #4           | Spin Right       |
+     | #5           | Spin Left        |
+     | #6           | Play Beep        |
+     | #7           | Play Tune        |
+     |              |                  |
+     |--------------+------------------|
+  2. Place Edison facing the barcode on the right side.
+  3. Press the record (round) button 3 times.
+  4. Edison will drive forward and scan the barcode
+  5. Press the remote control button to associate with the code/pairing behavior.
+  6. The Edison should respond according to the pairing behavior for the code 
+     you chose.  If it responds correctly, congratulations!  You've just paired
+     a button with the command code.
+     If it doesn't, then retry again, or choose a different button on the remote
+     to program.  If Edison does not respond to any of the buttons, you 
+     may need to try a different controller or, for universal remotes, 
+     adjust your remote controller settings.
+  
+* Writing a program to respond to the remote controller
+  1. In Edware, choose or create the event you want to use to 
+     control your Edison with the IR remote.
+  2. Add a loop and set the loop conditions to either Loop forever or
+     when a Test passes.
+  3. Add an event wait for when an "Event happens" to match any remote code.
+  4. Create a variable of Type 0-255 and give it a name (e.g. remoteCode)
+  5. Add a "Remote Control" Read icon and set the "Variable to read into:"
+     to be your variable (e.g. remoteCode)
+  6. Add "if" logic for the remote code you want.  Set "Test passes" with the
+     variable (e.g. remoteCode) then the condition and value for comparison.
+
+* Example program
+  This example program (http://www.edwareapp.com/share/kWdMF) plays different 
+  sounds or a tune using the command codes #0 through #3 
+  (corresponding to forwards, backwards, right, and left pairing
+  behaviors).
+  [[./RemoteMusicExample/RemoteMusicExample.jpg]]
+  
