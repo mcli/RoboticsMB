@@ -42,7 +42,8 @@
       4. Improper hand-off (-5)
 ** Relay Segments
    1. Hand-off between robots shall be done autonomously.  The receiving robot
-      shall beep 3 times to indicate a successful hand-off
+      shall beep 3 times to indicate a successful hand-off and send data back
+      to the sending robot to acknowledge receiving the baton.
    2. Time to complete each segment shall not exceed 5 minutes.
    3. Robots must stay within the boundaries of the course.
    4. Robots must not move boundaries or obstacles in its way.
@@ -55,9 +56,10 @@
      next robot for the automated hand-off.
 **** Keys to Success
      Relative lighting levels determine the direction the robot should 
-     head in.  Obstacle detection sensors should override the 
-     light level detection.  The line sensor detecting a non-reflecting surface
-     shall trigger the automated hand-off logic.
+     head in.  Obstacle detection should override the 
+     light level detection until there is no obstacle sensed.  
+     The line sensor detecting a non-reflecting surface
+     shall trigger the automated hand-off sequence.
 *** Segment 2 - Line Maze navigation
 **** Description
      The robot will autonomously navigate a line maze, detecting items in its path.
@@ -65,13 +67,13 @@
      be the next robot!  
 **** Keys to Success
      Combine the line following algorithm with an event which detects obstacles.
-     When an obstacle is detected, determine if it is a robot or an obstacle.
-     This can be done via a simple transmit/receive code different from
-     the hand off code.  If it is determined to be a robot, send the hand off
-     code.
+     When an obstacle is detected, determine if it is a robot for hand-off
+     or an obstacle.  Send the hand-off code and wait for an acknowledgement.
+     If there is no acknowledgement, turn around and continue navigating the line maze.
 *** Segment 3 - Ping Pong collection
 **** Description
-     The participant shall control the robot with the IR controller to place
+     After the robot acknowledges the hand-off from the Segment 2 robot,
+     the participant shall control the robot with the IR controller to place
      3 ping pong balls into a tray with a 1 inch high edge.  After succeeding 
      at this task, the the robot shall switch into autonomous mode to hand off 
      to the next robot.
