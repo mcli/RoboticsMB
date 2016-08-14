@@ -1,0 +1,119 @@
+#+TITLE: 2016 Troop 675 Robotics Merit Badge Class Competition:  Robo Relay
+#+AUTHOR: Maurice Ling
+#+DATE: 2016-08-29
+* Competition Date, Location, and Schedule
+  - Date:  Monday, August 29, 2016
+  - Time:  6:00-8:30pm
+  - Location:  Light of Christ Church Fellowship Hall
+  - Schedule:
+    - 6:00 pm Setup
+    - 6:30 pm Design Review with Judges
+    - 7:00 pm Competition Start
+    - 8:00 pm Competition results
+* Summary
+  The competition will be a relay race between two teams, completing
+  7 segments as specified in the /Relay Segments/ section.
+  After completing the objectives of each segment, each robot shall 
+  autonomously hand off control to the next robot, then come to a stop.
+  
+  Points will be awarded based the engineering notebooks of each scout and
+  finishing each segment of the relay race in the shortest time.  Specific
+  rules are listed in the /Rules/ section.
+
+* Competition Specifications  
+** Hardware/Software
+   1. The robot shall utilize the Edison robot platform
+   2. The robots shall be programmed by the participant for each segment
+   3. The design documentation shall be in the
+      participant's engineering notebook for judge's review.
+** Scoring  
+   1. Design documentation - Up to +25 points per scout awarded as follows;
+      1) Programming logic (+5)
+      2) Physical design (+5)
+      3) Testing & Results (+5)
+      4) Neatness/organization (+5)
+      5) Elegant and innovative design (+5)
+   2. Completion of each segment +20 points
+   3. Best time for each segment +10 points
+   4. Point Penalties
+      1. Physical intervention (-5)
+      2. Time limit exceeded for segment (-5)
+      3. Barrier/boundary movement (-5)
+      4. Improper hand-off (-5)
+** Relay Segments
+   1. Hand-off between robots shall be done autonomously.  The receiving robot
+      shall beep 3 times to indicate a successful hand-off
+   2. Time to complete each segment shall not exceed 5 minutes.
+   3. Robots must stay within the boundaries of the course.
+   4. Robots must not move boundaries or obstacles in its way.
+   5. The participant must not touch the robot after the initial placement.
+*** Segment 1 - Light tracking autonomous obstacle avoidance
+**** Description
+     The robot will autonomously heading toward the light while 
+     avoid the obstacles that are in the way.  When the robot detects
+     the hand-off line, it will navigate the line until it reaches the 
+     next robot for the automated hand-off.
+**** Keys to Success
+     Relative lighting levels determine the direction the robot should 
+     head in.  Obstacle detection sensors should override the 
+     light level detection.  The line sensor detecting a non-reflecting surface
+     shall trigger the automated hand-off logic.
+*** Segment 2 - Line Maze navigation
+**** Description
+     The robot will autonomously navigate a line maze, detecting items in its path.
+     The item may be a road block, which means it is a dead end, or it could
+     be the next robot!  
+**** Keys to Success
+     Combine the line following algorithm with an event which detects obstacles.
+     When an obstacle is detected, determine if it is a robot or an obstacle.
+     This can be done via a simple transmit/receive code different from
+     the hand off code.  If it is determined to be a robot, send the hand off
+     code.
+*** Segment 3 - Ping Pong collection
+**** Description
+     The participant shall control the robot with the IR controller to place
+     3 ping pong balls into a tray with a 1 inch high edge.  After succeeding 
+     at this task, the the robot shall switch into autonomous mode to hand off 
+     to the next robot.
+**** Keys to Success
+     Design robot to be able to collect and lift ping pong balls and transport
+     them to the tray. Program one button to switch the robot into autonomous
+     hand-off mode.
+*** Segment 4 - Speedway
+**** Description    
+     The participant shall control the robot with an IR controller to 
+     speed through a race course 3 laps.  After the third lap, the
+     robot shall switch into autonomous mode for the hand off to the next
+     robot.
+**** Keys to Success
+     Design for speed and agility.  Program one button to switch the robot 
+     into autonomous hand-off mode.
+*** Segment 5 - Push the cans
+**** Description
+     The participant shall control the robot with an IR controller to
+     push three 6 oz cans into a designated target area.  
+     After completing the task, the robot shall switch into autonomous mode
+     to hand off to the next robot.
+**** Keys to Success
+     Mechanical design to be able to drive and push a can around.
+     Consider that the can could be on its side as well.
+     Program one button to switch the robot into autonomous hand-off mode.
+*** Segment 6 - Clap controlled Driving
+**** Description
+     The participant shall control the robot to navigate through a course
+     by using clapping as the primary method of control.  When the robot
+     detects the hand-off line, it shall autonomously navigate to hand off to
+     the next robot.
+**** Keys to Success
+     Ability to encode claps into commands.  Count the number of claps in
+     a set amount of time, then convert that into a command to the motors.
+*** Segment 7 - Search and rescue
+**** Description
+     The Robot shall autonmously search within an area for a target spot.
+     Once it discovers the spot, it shall play a tune and then 
+     head toward the light located at the finish line, being careful to avoid
+     any obstacles on its way.
+**** Keys to Success
+     Algorithm to navigate a pattern.  Have an event to trigger if line tracker
+     detects non-reflecting surface, the switch into light controlled driving 
+     with obstacle detection.
