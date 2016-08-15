@@ -27,19 +27,28 @@
    3. The design documentation shall be in the
       participant's engineering notebook for judge's review.
 ** Scoring  
-   1. Design documentation - Up to +25 points per scout awarded as follows;
+   1. Design documentation - Up to +30 points per scout awarded as follows;
       1) Programming logic (+5)
+         - Clearly describe the flow of the program.
       2) Physical design (+5)
-      3) Testing & Results (+5)
-      4) Neatness/organization (+5)
-      5) Elegant and innovative design (+5)
+         - Describe parts of the robot and how they function
+      3) Sensor Inputs (+5)
+         - Describe the sensors and how they are are used.
+      4) Testing & Results (+5)
+         - What tests did you perform and how did your robot perform
+      5) Neatness/organization (+5)
+         - Clearly labeled sections, tables, diagrams, pictures.
+      6) Elegant and innovative design (+5)
+         - These points are awarded for designs show
+           creativity and innovation in performing the designated
+           tasks.
    2. Completion of each segment +20 points
    3. Best time for each segment +10 points
    4. Point Penalties
-      1. Physical intervention (-5)
-      2. Time limit exceeded for segment (-5)
-      3. Barrier/boundary movement (-5)
-      4. Improper hand-off (-5)
+      1) Physical intervention (-5)
+      2) Time limit exceeded for segment (-5)
+      3) Barrier/boundary movement (-5)
+      4) Improper hand-off (-5)
 ** Relay
    1. Timing starts when the first robot program starts.
    2. Each segment will be timed.
