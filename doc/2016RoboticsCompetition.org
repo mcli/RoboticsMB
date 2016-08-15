@@ -48,7 +48,8 @@
    5. Robots shall not move boundaries or obstacles in its way.
    6. The participant shall not touch the robot after the initial placement.
    7. All robots for the team shall be in place prior to starting the relay.
-   8. Segment shall be considered complete when hand-off is complete.
+   8. Segment shall be considered complete when hand-off is complete, or
+      in the case of segement 7, the finish line is crossed.
    9. Segments 3 and 5, the participant may optionally place one stationary 
       object on the course to assist in the task.
 *** Hand-Offs
