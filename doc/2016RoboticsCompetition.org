@@ -74,7 +74,7 @@
     8. Autonomous hand-off will be facilitated by a approximately 30 inch long 
        1.5cm wide black line.  The receiving robot will be positioned and the 
        end of this line.
-*** Segment 1 - Light tracking autonomous obstacle avoidance
+*** Segment 1 - Get to the Light
 **** Description
      The robot will autonomously heading toward the light while 
      avoid the obstacles that are in the way.  When the robot detects
@@ -88,7 +88,7 @@
      case is what to do if there is an object between the light the robot.
      The line sensor detecting a non-reflecting surface shall trigger the 
      automated hand-off sequence.
-*** Segment 2 - Line Maze navigation
+*** Segment 2 - Line Maze
 **** Description
      The robot will autonomously navigate a line maze, detecting items in its path.
      The item may be a road block, which means it is a dead end, or it could
@@ -99,7 +99,7 @@
      or an obstacle.  Send the hand-off code and wait for an ack.
      If there is no ack, turn around and continue navigating the 
      line maze until you get an ack.
-*** Segment 3 - Ping Pong collection
+*** Segment 3 - Ping Pong Collection
 **** Description
      After the robot acknowledges the hand-off from the Segment 2 robot,
      the participant shall control the robot with the IR controller to place
@@ -119,7 +119,7 @@
      Design for speed and agility.  Consider how to make
      your robot faster (gears, wheels, etc) and easier to turn.
      Program one button to switch the robot into autonomous hand-off mode.
-*** Segment 5 - Push the cans
+*** Segment 5 - Push the Cans
 **** Description
      The participant shall control the robot with an IR controller to
      push three 6 oz cans into a designated target area.  

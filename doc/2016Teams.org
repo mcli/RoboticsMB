@@ -1,0 +1,20 @@
+#+TITLE: 2016 Troop 675 Competition Team Rosters
+#+DATE: 2016-08-29
+
+
+* Teams
+  The teams for the 2016 Competition are *Give Me Two More Minutes (GUTMM)*
+  with Ryan captain and *Caps Lock Crusaders (CLC)* with Matthew as Captain.
+
+* Relay Segment Assignments
+|--------------------------+----------+---------|
+| Segment                  | GUTMM    | CLC     |
+|--------------------------+----------+---------|
+| 1 - Get to the Light     | Tin      | Yannik  |
+| 2 - Line Maze            | Caleb    | Matthew |
+| 3 - Ping Pong Collection | Spencer  | Praneet |
+| 4 - Speedway             | Brennan  | Connor  |
+| 5 - Push the Cans        | Tyson    | Logan   |
+| 6 - Clap Control         | Ryan     | Mateo   |
+| 7 - Search and Rescue    | Xian Lun | David   |
+|--------------------------+----------+---------|
