@@ -74,7 +74,7 @@
     8. Autonomous hand-off will be facilitated by a approximately 30 inch long 
        1.5cm wide black line.  The receiving robot will be positioned and the 
        end of this line.
-*** Segment 1 - Get to the Light
+*** Segment 1 - Light Navigation
 **** Description
      The robot will autonomously heading toward the light while 
      avoid the obstacles that are in the way.  When the robot detects

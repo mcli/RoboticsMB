@@ -4,13 +4,13 @@
 
 * Teams
   The teams for the 2016 Competition are *Give Me Two More Minutes (GUTMM)*
-  with Ryan captain and *Caps Lock Crusaders (CLC)* with Matthew as Captain.
+  with Ryan as captain and *Caps Lock Crusaders (CLC)* with Matthew as Captain.
 
 * Relay Segment Assignments
 |--------------------------+----------+---------|
 | Segment                  | GUTMM    | CLC     |
 |--------------------------+----------+---------|
-| 1 - Get to the Light     | Tin      | Yannik  |
+| 1 - Light navigation     | Tin      | Yannik  |
 | 2 - Line Maze            | Caleb    | Matthew |
 | 3 - Ping Pong Collection | Spencer  | Praneet |
 | 4 - Speedway             | Brennan  | Connor  |
