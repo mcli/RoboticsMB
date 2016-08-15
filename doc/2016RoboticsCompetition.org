@@ -40,14 +40,30 @@
       2. Time limit exceeded for segment (-5)
       3. Barrier/boundary movement (-5)
       4. Improper hand-off (-5)
-** Relay Segments
-   1. Hand-off between robots shall be done autonomously.  The receiving robot
-      shall beep 3 times to indicate a successful hand-off and send data back
-      to the sending robot to acknowledge receiving the baton.
-   2. Time to complete each segment shall not exceed 5 minutes.
-   3. Robots must stay within the boundaries of the course.
-   4. Robots must not move boundaries or obstacles in its way.
-   5. The participant must not touch the robot after the initial placement.
+** Relay
+   1. Timing starts when the first robot starts its program.
+   2. Each segment will be timed.
+   3. Time to complete each segment shall not exceed 5 minutes.
+   4. Robots shall stay within the boundaries of the course.
+   5. Robots shall not move boundaries or obstacles in its way.
+   6. The participant shall not touch the robot after the initial placement.
+   7. All robots for the team shall be in place prior to starting the relay.
+   8. Segment shall be considered complete when hand-off is complete.
+   9. Segments 3 and 5, the participant may optionally place one stationary 
+      object on the course to assist in the task.
+*** Hand-Offs
+    1. Hand-offs shall be performed between segements.
+    2. Hand-off between robots shall be done autonomously.  No human interaction
+       or control is allowed.
+    3. The receiving robot shall beep 3 times to indicate a successful hand-off.
+    4. The receiving robot shall send data back to the sender to acknowledge receipt.
+    5. The sending robot shall receive the acknowledgement (ack) and blink 3 times
+       to indicate receipt.
+    6. The hand-off is considered once the ack sequence is complete.
+    7. The sending robot shall remain stationary after the hand-off.
+    8. Autonomous hand-off will be facilitated by a approximately 30 inch long 
+       1.5cm wide black line.  The receiving robot will be positioned and the 
+       end of this line.
 *** Segment 1 - Light tracking autonomous obstacle avoidance
 **** Description
      The robot will autonomously heading toward the light while 
@@ -55,11 +71,13 @@
      the hand-off line, it will navigate the line until it reaches the 
      next robot for the automated hand-off.
 **** Keys to Success
-     Relative lighting levels determine the direction the robot should 
-     head in.  Obstacle detection should override the 
-     light level detection until there is no obstacle sensed.  
-     The line sensor detecting a non-reflecting surface
-     shall trigger the automated hand-off sequence.
+     Relative lighting levels between the left and right light sensors 
+     determine the direction the robot should 
+     head in.  Obstacle sensor reading and light level detection both need to
+     be considered when determining what direction to go in.  Key test
+     case is what to do if there is an object between the light the robot.
+     The line sensor detecting a non-reflecting surface shall trigger the 
+     automated hand-off sequence.
 *** Segment 2 - Line Maze navigation
 **** Description
      The robot will autonomously navigate a line maze, detecting items in its path.
@@ -68,8 +86,9 @@
 **** Keys to Success
      Combine the line following algorithm with an event which detects obstacles.
      When an obstacle is detected, determine if it is a robot for hand-off
-     or an obstacle.  Send the hand-off code and wait for an acknowledgement.
-     If there is no acknowledgement, turn around and continue navigating the line maze.
+     or an obstacle.  Send the hand-off code and wait for an ack.
+     If there is no ack, turn around and continue navigating the 
+     line maze until you get an ack.
 *** Segment 3 - Ping Pong collection
 **** Description
      After the robot acknowledges the hand-off from the Segment 2 robot,
@@ -85,11 +104,11 @@
 **** Description    
      The participant shall control the robot with an IR controller to 
      speed through a race course 3 laps.  After the third lap, the
-     robot shall switch into autonomous mode for the hand off to the next
-     robot.
+     the robot shall switch into autonomous mode for the hand off to the next robot.
 **** Keys to Success
-     Design for speed and agility.  Program one button to switch the robot 
-     into autonomous hand-off mode.
+     Design for speed and agility.  Consider how to make
+     your robot faster (gears, wheels, etc) and easier to turn.
+     Program one button to switch the robot into autonomous hand-off mode.
 *** Segment 5 - Push the cans
 **** Description
      The participant shall control the robot with an IR controller to
@@ -109,13 +128,21 @@
 **** Keys to Success
      Ability to encode claps into commands.  Count the number of claps in
      a set amount of time, then convert that into a command to the motors.
+     Remember that if the motors are on, the sound sensor will detect that sound!
+     Make sure the motors are off when processing the claps.
 *** Segment 7 - Search and rescue
 **** Description
      The Robot shall autonmously search within an area for a target spot.
-     Once it discovers the spot, it shall play a tune and then 
+     Once it discovers the spot, it shall play a musical tune and then 
      head toward the light located at the finish line, being careful to avoid
-     any obstacles on its way.
+     any obstacles on its way.  Relay is complete when the robot passes
+     the finish line.
 **** Keys to Success
-     Algorithm to navigate a pattern.  Have an event to trigger if line tracker
-     detects non-reflecting surface, the switch into light controlled driving 
-     with obstacle detection.
+     Algorithm to navigate a pattern within an enclosed area.  Be sure to use the 
+     obstacle sensor inputs to detect the boundaries and obstacles.  
+     Have an event to trigger if line tracker
+     detects a non-reflecting surface which marks the target. 
+     Once the target is detected, play a musical tune and switch into 
+     light controlled driving with obstacle detection.  See segement 1's
+     Keys to Success.
+     
