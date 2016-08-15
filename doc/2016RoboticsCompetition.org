@@ -41,7 +41,7 @@
       3. Barrier/boundary movement (-5)
       4. Improper hand-off (-5)
 ** Relay
-   1. Timing starts when the first robot starts its program.
+   1. Timing starts when the first robot program starts.
    2. Each segment will be timed.
    3. Time to complete each segment shall not exceed 5 minutes.
    4. Robots shall stay within the boundaries of the course.
