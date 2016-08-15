@@ -49,11 +49,11 @@
    6. The participant shall not touch the robot after the initial placement.
    7. All robots for the team shall be in place prior to starting the relay.
    8. Segment shall be considered complete when hand-off is complete, or
-      in the case of segement 7, the finish line is crossed.
+      in the case of segment 7, the finish line is crossed.
    9. Segments 3 and 5, the participant may optionally place one stationary 
       object on the course to assist in the task.
 *** Hand-Offs
-    1. Hand-offs shall be performed between segements.
+    1. Hand-offs shall be performed between segments.
     2. Hand-off between robots shall be done autonomously.  No human interaction
        or control is allowed.
     3. The receiving robot shall beep 3 times to indicate a successful hand-off.
@@ -144,6 +144,6 @@
      Have an event to trigger if line tracker
      detects a non-reflecting surface which marks the target. 
      Once the target is detected, play a musical tune and switch into 
-     light controlled driving with obstacle detection.  See segement 1's
+     light controlled driving with obstacle detection.  See segment 1's
      Keys to Success.
      
