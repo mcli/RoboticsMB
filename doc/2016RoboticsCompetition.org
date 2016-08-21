@@ -32,8 +32,9 @@
          - Clearly describe the flow of the program.
       2) Physical design (+5)
          - Describe parts of the robot and how they function
-      3) Sensor Inputs (+5)
-         - Describe the sensors and how they are are used.
+      3) Electrical design (+5)  
+         - Sensor Inputs - Describe the sensors and how they are are used.
+         - Power - Describe what provides power to the robot
       4) Testing & Results (+5)
          - What tests did you perform and how did your robot perform
       5) Neatness/organization (+5)
