@@ -63,6 +63,7 @@
   This example program (http://www.edwareapp.com/share/kWdMF) plays different 
   sounds or a tune using the command codes #0 through #3 
   (corresponding to forwards, backwards, right, and left pairing
-  behaviors).
+  behaviors).  Change this program to get your robot to do different functions
+  and add processing for codes #4 through #7 as well!
   [[./RemoteMusicExample/RemoteMusicExample.jpg]]
   
