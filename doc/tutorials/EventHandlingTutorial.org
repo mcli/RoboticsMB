@@ -59,8 +59,10 @@
   using variables that the event handlers modify.
 
   Exercises:
-  - set the dual drive direction and speed to use variables
-    that are set in the obstacle detector event handler.
+  - Create Obstacle detector event handlers for left, right, and front detection
+    and set the dual drive motor direction accordingly.  Remember that
+    you need to set a Event Wait delay after setting the motor to allow
+    that to take effect for the given amount of time.
   - Have the robot be controlled by remote control, but allow the 
     obstacle detector to change the direction to avoid obstacles.
   
@@ -73,6 +75,6 @@
   - Test incrementally and save often.
   - Once a program works, save it with a version number and then increment
     the version so you can go back to it if you need to.
-  - Add Beeps and/or music to different events so you can hear the event 
-    trigger.
+  - To aid debugging, add Beeps and/or music to different events at specific
+    locations so you know that that code is being executed.
   
