@@ -9,9 +9,9 @@
   handlers to your Edison program.
 
 * Event Handling Primer
-  The main program contains the core logic of your probram.  It is delimited 
-  by the /Start/ and /End/ icons.  Once the main program
-  finishes, the program execution is complete and your robot stops running.  
+  The main program, delimited by the /Start/ and /End/ icons, contains
+  the core logic of your program. Once the main program finishes, the
+  program execution is complete and your robot stops running.
 
   With Edison, you can add event handlers, delimited by /Start Event/ and /End Event/
   icons, to react to different conditions that happen.  These conditions are 
@@ -32,19 +32,20 @@
      on the /Start Event/ icon and editing its properities.
 
 * Example
-   I want Edison to drive straight and beep whenever it detects a line
-   (a non-reflective surface) and stop when it detects an obstacle.
-   While I could have added some complex logic in the main program to
-   do this, it is much simpler by adding a couple of event handlers.
-   One to handle the line tracking sensor input and another to handle
-   the obstacle sensors inputs.
+   We want Edison to drive straight and beep whenever it detects a
+   line (a non-reflective surface) and stop when it detects an
+   obstacle.  While we could have added some complex logic in the main
+   program to do this, it is much simpler to add a couple of event
+   handlers.  One event handler to process the line tracking sensor
+   input and another to process the obstacle sensors inputs.
 
    To allow event handlers and the main program to communicate with
-   one another, I use a variable, /stop/, which I create using the
-   /Variable Editor/.  In this case, I want to tell the main program
-   to stop when I encounter an obstacle.  I do this by having the loop
-   in the main program exit when /stop/ is set to 1.  In the /Variable
-   Editor/ I set the initial value of /stop/ to 0.
+   one another, we use a variable, /stop/, which we create using the
+   /Variable Editor/.  In this case, we want to tell the main program
+   to stop when Edison encounters an obstacle.  This is accomplished
+   by having the loop in the main program exit when /stop/ is set
+   to 1.  In the /Variable Editor/ we set the initial value of /stop/
+   to 0.
 
    [[./EventHandlingExample/EventHandlingExample.jpg]]
 
