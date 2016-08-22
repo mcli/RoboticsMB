@@ -1,0 +1,77 @@
+#+TITLE: Programming Edison With Event Handlers
+#+AUTHOR: Maurice Ling
+#+DATE: 2016-08-21
+* Introduction
+  The main program executes when you push the play (triangle) button.
+  It is possible to add other programs that respond to different events by
+  adding a new event handler to your program to make it less complex 
+  and easier to understand.  This tutorial explains how to add and use event 
+  handlers to your Edison program.
+
+* Event Handling Primer
+  The main program contains the core logic of your probram.  It is delimited 
+  by the /Start/ and /End/ icons.  Once the main program
+  finishes, the program execution is complete and your robot stops running.  
+
+  With Edison, you can add event handlers, delimited by /Start Event/ and /End Event/
+  icons, to react to different conditions that happen.  These conditions are 
+  the same conditions that you can specify using
+  the /Event Wait/ Flow Icon with the added advantage that they can be executed
+  any time the event happens rather than only at a particular point in the
+  main program.
+
+  Any time an Event with a handler fires, it interrupts the main program and starts executing
+  the event handler code and executes it to completion.  After finishing
+  the event handler, the control of the program goes back to the main program.
+
+* Adding a New Event Handler
+  1. In Edware, add new events by dragging the /Event/ Flow button (located
+     under the /if/ on the command palette) over to the right of the /New
+     Event/ icon on your program canvas.
+  2. Configure which event you want to trigger this program segment by clicking
+     on the /Start Event/ icon and editing its properities.
+
+* Example
+   I want Edison to drive straight and beep whenever it detects a line
+   (a non-reflective surface) and stop when it detects an obstacle.
+   While I could have added some complex logic in the main program to
+   do this, it is much simpler by adding a couple of event handlers.
+   One to handle the line tracking sensor input and another to handle
+   the obstacle sensors inputs.
+
+   To allow event handlers and the main program to communicate with
+   one another, I use a variable, /stop/, which I create using the
+   /Variable Editor/.  In this case, I want to tell the main program
+   to stop when I encounter an obstacle.  I do this by having the loop
+   in the main program exit when /stop/ is set to 1.  In the /Variable
+   Editor/ I set the initial value of /stop/ to 0.
+
+   [[./EventHandlingExample/EventHandlingExample.jpg]]
+
+   [[http://www.edwareapp.com/share/jJdbL][Event Handling Example Source Code]]
+
+* Going Beyond the Example
+  In this tutorial, we used event handlers to give the robot
+  different behaviors (e.g. beep on a line) and to control the main program
+  (e.g. set the /stop/ variable to cause the main program to stop).  
+  With these basic building blocks, you can have main program elements controlled
+  using variables that the event handlers modify.
+
+  Exercises:
+  - set the dual drive direction and speed to use variables
+    that are set in the obstacle detector event handler.
+  - Have the robot be controlled by remote control, but allow the 
+    obstacle detector to change the direction to avoid obstacles.
+  
+* Tips
+  - Avoid complex logic and loops in the event handlers.  
+  - Set variables and do things quickly in event handlers so that control 
+    can return to the main program.
+  - You can temporarily disable events while debugging by changing the event to the 
+    /keypad/ event so that it doesn't get executed.
+  - Test incrementally and save often.
+  - Once a program works, save it with a version number and then increment
+    the version so you can go back to it if you need to.
+  - Add Beeps and/or music to different events so you can hear the event 
+    trigger.
+  

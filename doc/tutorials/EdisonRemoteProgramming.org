@@ -1,3 +1,6 @@
+#+TITLE:  Programming an IR Remote to Work With your Edison
+#+AUTHOR: Maurice Ling
+#+DATE: 2016-08-09
 * Introduction
   This tutorial explains how to pair a TV/DVD IR remote to your Edison,
   how to write a program for the Edison to respond to the remote,
