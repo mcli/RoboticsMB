@@ -130,7 +130,7 @@
      Mechanical design to be able to drive and push a can around.
      Consider that the can could be on its side as well.
      Program one button to switch the robot into autonomous hand-off mode.
-*** Segment 6 - Clap controlled Driving
+*** Segment 6 - Clap-Controlled Driving
 **** Description
      The participant shall control the robot to navigate through a course
      by using clapping as the primary method of control.  When the robot
@@ -141,7 +141,7 @@
      a set amount of time, then convert that into a command to the motors.
      Remember that if the motors are on, the sound sensor will detect that sound!
      Make sure the motors are off when processing the claps.
-*** Segment 7 - Search and rescue
+*** Segment 7 - Search and Rescue
 **** Description
      The Robot shall autonmously search within an area for a target spot.
      Once it discovers the spot, it shall play a musical tune and then 
